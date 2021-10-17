@@ -7,4 +7,8 @@ Course url: https://www.appbrewery.co/courses
 
 - React framework
 - React components
+- React props
+- React dev tools
 - create-react-app
+- array map, filter, reduce, etc. functions
+- arrow functions
