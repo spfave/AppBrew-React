@@ -13,13 +13,16 @@ export default function App() {
     setNotes([...notes, note]);
   }
 
-  function deleteNote(params) {}
+  function deleteNote(noteID) {
+    const filteredNotes = notes.filter((note, idx) => idx !== noteID);
+    setNotes(filteredNotes);
+  }
 
   return (
     <div className="App">
       <Header />
       <CreateNote addNote={addNote} />
-      <Notes notes={notes} />
+      <Notes notes={notes} deleteNote={deleteNote} />
       <Footer />
     </div>
   );
